@@ -1,0 +1,3 @@
+1- cargar las sucursales mediante ajax
+2- preguntar si el password lo genero y se lo doy al empleado para que lo cambie o que lo introduzca el empleado
+3-
