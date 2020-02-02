@@ -1,3 +1,13 @@
 1- cargar las sucursales mediante ajax
 2- preguntar si el password lo genero y se lo doy al empleado para que lo cambie o que lo introduzca el empleado
-3-
+3- las validaciones esta medias correctas pero los border rojos no salen
+
+
+LLENAR TABLAS
+TBL_GENEROS
+TBL_ESTADO_CIVIL
+TBL_SUCURSALES
+TBL_ESTATUS_EMPLEADO
+TBL_CARGOS_EMPLEADO
+
+--contraseña test2@gmail.com -> uXwQfMxRde
