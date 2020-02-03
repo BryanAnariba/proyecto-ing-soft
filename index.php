@@ -23,10 +23,9 @@
                     </div>
                     <div class="card-body bg-dark">
                         <br>
-                        <div class="form-group text-center text-white">
-                            <input type="button" id="btn-login" class="btn btn-success" value="Iniciar Sesion"> O 
-                            <input type="button" id="btn-signup" class="btn btn-success" value="Crear Cuenta">
-                        </div>
+                        <center>
+                        <input type="button" id="btn-login" class="btn btn-success" value="Iniciar Sesion">
+                        </center>
                     </div>
                 </div>
             </div>
@@ -38,7 +37,7 @@
     <!--Contenedor para loguearse-->
     <div id="contenedor-email" class="container animated jackInTheBox" style="display:none;">
         <div class="row mt-5">
-            <div class="col-md-5 col-sm-12 mx-auto">
+            <div class="col-md-6 col-sm-12 mx-auto">
                 <img src="assets/img/email.png" id="avatar2">
                 <div class="card">
                     <div class="card-header bg-primary">
@@ -48,11 +47,14 @@
                     </div>
                     <div class="card-body bg-dark">
                         <div class="form-group">
-                            <input type="email" id="email" class="form-control" placeholder="Digite Su Correo Electronico">
+                            <input type="email"  name="email" id="email" class="form-control" placeholder="Digite Su Correo Electronico">
                         </div>
                         <div class="form-group">
-                            <input type="button" id="btn-next" value="Next" class="btn btn-success btn-block">
+                            <input type="button" id="btn-next" value="Verificar Contraseña" class="btn btn-success btn-block">
                         </div>
+                    </div>
+                    <div class="card-footer bg-dark" id="respuesta">
+                        
                     </div>
                 </div>
             </div>
