@@ -147,20 +147,20 @@ $(document).ready(function () {
         }
         if(numIdentidad.length > 25) {
             errores += '<p><img src="assets/img/borrar.svg" width="15px"> Campo Identidad Debe ser menor o igual a 25 Caracteres</p>';
-            document.getElementById("txt-identificacion").style.borderBottom = '2px solid red';
+            $('#txt-identificacion').css('border-bottom-color','#F14B4B');
         } else if (numIdentidad.length > 25) {
             document.getElementById("txt-identificacion").style.borderBottom = 'none';
         }
         if(nombres === '') {
             errores += '<p><img src="assets/img/borrar.svg" width="15px"> Campo Nombre Vacio</p>';
-            document.getElementById("txt-nombre").style.borderBottom = '2px solid red';
-        } else {
+            $('#txt-nombre').css('border-bottom-color','#F14B4B');
+        } else if (nombres != ''){
             document.getElementById("txt-nombre").style.borderBottom = 'none';
         }
         if(nombres.length > 60) {
             errores += '<p><img src="assets/img/borrar.svg" width="15px"> Campo Nombre Debe ser menor o igual a 60 Caracteres</p>';
-            document.getElementById("txt-nombre").style.borderBottom = '2px solid red';
-        } else {
+            $('#txt-nombre').css('border-bottom-color','#F14B4B');
+        } else if(nombres.length <= 60){
             document.getElementById("txt-nombre").style.borderBottom = 'none';
         }
         if(apellidos === '') {
@@ -206,7 +206,7 @@ $(document).ready(function () {
             errores += '<p><img src="assets/img/borrar.svg" width="15px"> No ha Seleccionado la certificacion que tiene el futuro Empleado</p>';
         }
 
-        //validando correos
+        //validando correos con expresion regular
         let expresion = /\w+@\w+\.+[a-z]/;
         if(!expresion.test(email)) {
             console.log("No es un correo");
@@ -239,26 +239,27 @@ $(document).ready(function () {
             '</div>';
 
             $("body").append(despliegueModal);
-        }
-        $("#btn-cerrar").click(function () {
-            $('#modal-wrap').remove();
-        });
-        //alert(errores);
-        const parametros = `identidad=${numIdentidad}&nombres=${nombres}&apellidos=${apellidos}&fecha=${fecha}&genero=${genero}&estadoCivil=${estadoCivil}&direccion=${direccion}&cargo=${cargo}&sucursal=${sucursal}&titulacion=${titulacion}&email=${email}&telefono=${$("#txt-telefono").val()}&celular=${$("#txt-cel").val()}&obs=${$("#txt-obs").val()}`;
-        console.log(parametros)
+            $("#btn-cerrar").click(function () {
+                $('#modal-wrap').remove();
+            });
+        } else {
+            //alert(errores);
+            const parametros = `identidad=${numIdentidad}&nombres=${nombres}&apellidos=${apellidos}&fecha=${fecha}&genero=${genero}&estadoCivil=${estadoCivil}&direccion=${direccion}&cargo=${cargo}&sucursal=${sucursal}&titulacion=${titulacion}&email=${email}&telefono=${$("#txt-telefono").val()}&celular=${$("#txt-cel").val()}&obs=${$("#txt-obs").val()}`;
+            console.log(parametros)
 
-        $.ajax({
-            url: 'ajax/procesar-insercion-empleado.php' ,
-            method: 'POST' ,
-            dataType: 'json' ,
-            data: parametros ,
-            success:function (respuesta) {
-                console.log(respuesta);
-            },
-            error:function (error) {
-                console.log(error);
-            }
-        });
+            $.ajax({
+                url: 'ajax/procesar-insercion-empleado.php' ,
+                method: 'POST' ,
+                dataType: 'json' ,
+                data: parametros ,
+                success:function (respuesta) {
+                    console.log(respuesta);
+                },
+                error:function (error) {
+                    console.log(error);
+                }
+            });
+        }
     });
     //------------------------------------------------------------------------------------------------------
 });

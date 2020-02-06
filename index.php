@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,8 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700&display=swap" rel="stylesheet">
 </head>
-<body>         
+
+<body>
     <div class="container" id="principal">
         <div class="row mt-5">
             <div class="col-lg-5 col-sm-12 mx-auto my-auto">
@@ -24,7 +26,7 @@
                     <div class="card-body bg-dark">
                         <br>
                         <center>
-                        <input type="button" id="btn-login" class="btn btn-success" value="Iniciar Sesion">
+                            <input type="button" id="btn-login" class="btn btn-success" value="Iniciar Sesion">
                         </center>
                     </div>
                 </div>
@@ -47,14 +49,14 @@
                     </div>
                     <div class="card-body bg-dark">
                         <div class="form-group">
-                            <input type="email"  name="email" id="email" class="form-control" placeholder="Digite Su Correo Electronico">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Digite Su Correo Electronico">
                         </div>
                         <div class="form-group">
                             <input type="button" id="btn-next" value="Verificar Contraseña" class="btn btn-success btn-block">
                         </div>
                     </div>
                     <div class="card-footer bg-dark" id="respuesta">
-                        
+
                     </div>
                 </div>
             </div>
@@ -71,11 +73,14 @@
                     </div>
                     <div class="card-body bg-dark">
                         <div class="form-group">
-                            <input type="email" id="password" class="form-control" placeholder="Digite Su Contraseña">
+                            <input type="password" id="password" class="form-control" placeholder="Digite Su Contraseña">
                         </div>
                         <div class="form-group">
                             <input type="button" id="btn-ok" value="Next" class="btn btn-success btn-block">
                         </div>
+                    </div>
+                    <div class="card-footer bg-dark" id="respuesta2">
+
                     </div>
                 </div>
             </div>
@@ -84,6 +89,6 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/controller.js"></script>
-    
 </body>
+
 </html>

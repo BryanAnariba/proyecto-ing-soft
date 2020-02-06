@@ -11,3 +11,5 @@ TBL_ESTATUS_EMPLEADO
 TBL_CARGOS_EMPLEADO
 
 --contraseña test2@gmail.com -> uXwQfMxRde
+                test10              Dx87PEQVPj
+                test9               LljJ7muEDz

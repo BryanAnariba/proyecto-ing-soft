@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,6 +22,20 @@
     <?php include('partials/header/header.php');?>
     <br><br><br><br>
  
+    <?php
+        if (isset($_SESSION['USER_ID'])):
+    ?>
+        <div class="card mt-5">
+            <div class="card-header bg-dark">
+                <h3 class="text-center text-white">
+                    <?php echo $_SESSION['CORREO']?>
+                </h3>
+            </div>
+            <div class="card-body">
+            
+            </div>
+        </div>
+    <?php endif;?>
     <div class="container" id="contenedor-inicial"><!--Inicio en el navbar-->
         <div class="row mb-5">
             <div class="col-lg-4 col-sm-12">
