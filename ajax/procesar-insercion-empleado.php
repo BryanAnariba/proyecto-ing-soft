@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include('../php-connect-db/db-connection.php');
 
     function generar_passwords($tamanio) {
@@ -38,8 +39,14 @@
         $sqlInsertPersona = "CALL SP_INSERTA_PERSONA('$nombres','$apellidos',$genero,$estadoCivil,'$identidad','$fecha','$direccion','$telefono','$celular');";
         $res = mysqli_query($conexion , $sqlInsertPersona);
 
-        $sqlInsertEmpleado = "CALL SP_INSERTA_EMPLEADO($sucursal,1,$titulacion,$cargo,NOW(),'$email','$newPassword','$obs','undraw_male_avatar_323b.png');";
+        $sqlInsertEmpleado = "CALL SP_INSERTA_EMPLEADO($sucursal,1,$titulacion,$cargo,NOW(),'$email','$newPassword','$obs','usuario.png');";
         $res2 = mysqli_query($conexion , $sqlInsertEmpleado);
+        if(isset($_SESSION['USER_ID'])){
+            $id = $_SESSION['USER_ID'];
+            $sql = "CALL SP_CAPTURA_BITACORA($id,5)";
+            $resultados = mysqli_query($conexion,$sql);
+        }
+        
 
         if($res==true && $res2==true) {
 

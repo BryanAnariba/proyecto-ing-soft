@@ -5,12 +5,13 @@
                 <img src="assets/img/Mangekyou_Sharingan_Kakashi.svg" alt="">
             </div>
             <div class="enlaces-header">
-                <a href="/proyecto-ing-soft/landing.php">Inicio</a>
+                <a href="#" id="control-inicio">Inicio</a>
                 <a href="#">Diseños</a>
                 <a href="#">Ofrecemos</a>
                 <a href="#">Registrate</a>
                 <a href="#">Contactanos</a>
                 <a href="#" id="configuraciones-nav">Configuraciones</a>
+                <a href="log-out.php">Cerrar Sesion</a>
             </div>
             <!--para menu hamburguesa este caso una x por que es gratis en responsive font awesome-->
             <div class="hamburguer">

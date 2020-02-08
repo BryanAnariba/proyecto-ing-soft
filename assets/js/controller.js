@@ -49,37 +49,42 @@ $("#btn-next").click(function() {
             dataType: 'json' ,
             data: parametros ,
             success:function(response) {
+                console.log(response);
                 if(response === 'vacios') {
                     document.getElementById("respuesta2").innerHTML = 
                         `<div class="alert alert-danger alert-dismissible fade show" role="alert">
                             <strong>
-                                El Campo Contraseña esta vacio , Rellene el Campo.
+                                El Campo Contraseña esta vacio, Rellene el Campo Nuevamente.
                             </strong> 
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                         </button>
                         </div>`;
                         document.getElementById("password").value = "";
+                } else {
+                    if(response === 'incorrecto') {
+                        document.getElementById("respuesta2").innerHTML = 
+                        `<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>
+                                La Contraseña es Incorrecta , Digite la Contraseña Nuevamente.
+                            </strong> 
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>`;
+                        document.getElementById("password").value = "";
+                    } else {
+                        if(response === 'correcto') {
+                            console.log('Credenciales correctas');
+                            document.getElementById("contenedor-email").style.display = "none";
+                            document.getElementById("contenedor-password").style.display = "none";
+                            document.getElementById("principal").style.display = "none";
+                            window.location="landing.php";
+                        }
+                    }
                 } 
-                if(response === 'incorrecto') {
-                    document.getElementById("respuesta2").innerHTML = 
-                    `<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>
-                            La Contraseña es Incorrecta , Digite la Contraseña Nuevamente.
-                        </strong> 
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>`;
-                    document.getElementById("password").value = "";
-                }
-                if(response === 'correcto') {
-                    console.log('Credenciales correctas');
-                    document.getElementById("contenedor-email").style.display = "none";
-                    document.getElementById("contenedor-password").style.display = "none";
-                    document.getElementById("principal").style.display = "none";
-                    window.location="landing.php";
-                }
+                
+
             } ,
             error:function (error) {
                 console.log(error);

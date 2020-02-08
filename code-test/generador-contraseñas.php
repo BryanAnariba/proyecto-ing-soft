@@ -13,5 +13,15 @@
         }
         return $claveGenerada;
     }
-    echo generar_passwords($tamanio);
+    $var = generar_passwords($tamanio);
+    echo $var;
+
+    echo password_hash($var , PASSWORD_DEFAULT)."\n";
+
+    // clave -> HS4tYjrqq5
+    // correo -> test2@gmail.com
+
+    // clasve -> test10@gmail.com
+    // correo -> MYF9aHvKFW
+
 ?>
