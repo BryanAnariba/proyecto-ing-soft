@@ -61,12 +61,12 @@
             //$mensajeCompleto = $mensaje . '\nAtentamente: ' . $nombre;
             //mail($email , $asunto , $mensajeCompleto , $header);
 
-            $json[] = array(
+            /*$json[] = array(
                 "mensaje" => "Persona Insertada Exitosamente, Que el Nuevo Empleado Verifique su Correo Electronico para que pueda ver su contraseña.",
-                "password" => $password
-            );
-            $string = json_encode($json);
-            echo $string;
+                "password" => 
+            );*/
+            echo json_encode($password);
+
         }
     }
 

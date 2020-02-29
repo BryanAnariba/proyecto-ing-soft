@@ -31,7 +31,7 @@ body {
     bottom: -50px;
     z-index: 2;
     position: relative;
-    left: calc(44% - 50px);
+    left: calc(45% - 50px);
     border-radius: 50%;
 }
 #avatar4 {
@@ -74,4 +74,17 @@ body {
     border: 2px solid #B14141;
     cursor: pointer;
     float: right;
+}
+
+
+/*Alertas Rojas y verdes*/
+.alert-danger {
+    color: #fff;
+    background-color: #712b29;
+    border-color: #712b29;
+}
+.alert-success {
+    color: #fff;
+    background-color: #49B96F;
+    border-color: #49B96F;
 }

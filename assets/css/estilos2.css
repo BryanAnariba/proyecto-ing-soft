@@ -63,7 +63,7 @@ nav {
 
 }
 .nav .logo {
-    height: 70px;
+    height: 80px;
 }
 
 .nav .logo img {
@@ -218,6 +218,24 @@ footer {
         width: 500px;
     }
 
+    .enlaces-header {/*desaparecer los enlaces para darle un menu aparte con js*/
+        position: fixed;
+        background: #000428;  /* fallback for old browsers */       
+        background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+        transition: ease-in-out 0.5s;
+    }
+
 }
 
 @media screen and (max-width:600px) {
@@ -279,4 +297,85 @@ footer {
         margin-bottom: 40px;
     }
 
+}
+
+/*botones*/
+.btn-info {
+    color: #fff;
+    font-weight: 700;
+    background-color: #273c75;/*#2570FF*/;
+    border-color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #fff;
+    text-align: center;
+    outline-width: 0;
+
+}
+.btn-info:hover {
+    /**/
+    color: rgba(0,36,132);
+    background-color: #FFF;
+    border-color: #FFF;
+    border: 1px solid rgba(0,36,132);
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show>.btn-info.dropdown-toggle {
+    background-color: #FFF;
+    border-color: #FFF;
+}
+.btn-info:focus, .btn-info.focus {
+    background-color: #FFF;
+    border-color: #FFF;
+    color: rgba(0,36,132);
+    border: 1px solid rgba(0,36,132);
+}
+.btn-info:focus, .btn-info.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 0 0.2rem rgba(255, 253, 253, 0.5); 
+}
+.btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active, .show>.btn-info.dropdown-toggle {
+    background-color: #FFF;
+    color: rgba(0,36,132);
+    border: 1px solid rgba(0,36,132);
+}
+
+
+/**/
+.card .configuraciones-empleado {
+    border: none;
+}
+
+.modal-body {
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Roboto' , sans-serif;
+}
+
+
+/*para hacer uso cada vez que requiera letra robusta*/
+.titulos-fuertes { font-weight: 900; color:black; font-size:20px }
+
+.parrafos-fuertes { font-size:16px }
+
+
+/*Alertas Rojas y verdes*/
+.alert-danger {
+    color: #fff;
+    background-color: #712b29;
+    border-color: #712b29;
+}
+.alert-success {
+    color: #fff;
+    background-color: #49B96F;
+    border-color: #49B96F;
+}
+
+
+.input-error {
+    border-bottom:1px solid red;
+}
+
+.input-success {
+    border-bottom:none;
 }

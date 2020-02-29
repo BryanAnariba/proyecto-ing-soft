@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome To Your App</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-personalizado-3.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500,700&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
                             <input type="email" name="email" id="email" class="form-control" placeholder="Digite Su Correo Electronico">
                         </div>
                         <div class="form-group">
-                            <input type="button" id="btn-next" value="Verificar Contraseña" class="btn btn-success btn-block">
+                            <input type="button" id="btn-next" value="Verificar Correo" class="btn btn-success btn-block">
                         </div>
                     </div>
                     <div class="card-footer bg-dark" id="respuesta">
@@ -76,7 +76,7 @@
                             <input type="password" id="password" class="form-control" placeholder="Digite Su Contraseña">
                         </div>
                         <div class="form-group">
-                            <input type="button" id="btn-ok" value="Next" class="btn btn-success btn-block">
+                            <input type="button" id="btn-ok" value="Verificar Clave" class="btn btn-success btn-block">
                         </div>
                     </div>
                     <div class="card-footer bg-dark" id="respuesta2">

@@ -1,6 +1,6 @@
 <footer class="mt-5">
     <div class="partFooter">
-        <img src="assets/img/is.png" alt="">
+        <img src="../assets/img/is.png" alt="">
     </div>
     <div class="partFooter">
         <h4>Servicios De Telefonia Y Electronicos</h4>

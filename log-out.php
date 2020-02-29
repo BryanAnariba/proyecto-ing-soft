@@ -1,5 +1,4 @@
 <?php
-    sleep(2);
     session_start();
     require('php-connect-db/db-connection.php');
     if(isset($_SESSION['USER_ID'])) {

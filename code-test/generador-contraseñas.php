@@ -17,11 +17,24 @@
     echo $var;
 
     echo password_hash($var , PASSWORD_DEFAULT)."\n";
+    // password: foEN2IVTHh
+    // hash: $2y$10$wyWmJ5.H.Oeacixp45vbJeguQv3Zk4qaYhlSDahm2Z.pgaZGnCWGS
 
-    // clave -> HS4tYjrqq5
-    // correo -> test2@gmail.com
 
-    // clasve -> test10@gmail.com
-    // correo -> MYF9aHvKFW
+    // gmail -> mariafernanda@gmail.com
+    // pass -> ASD456
+
+    // test6@gmail.com 
+    //C1aquQBQd5
+
+    // test12@gmail.com
+    // ToyTaBVB9h
+
+    // anael@gmail.com 
+    // fm$FMPYhAi
+
+    // morningstar@gmail.com 
+    // NSdCM53Y2D
+
 
 ?>

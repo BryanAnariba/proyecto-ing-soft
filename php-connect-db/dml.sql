@@ -39,3 +39,9 @@ INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ('Cierre Sesion','Ca
 INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ('Venta','Cada vez que un empleado realiza una venta de electronico o servicio en el sistema queda como comprobacion el tipo de accion que hizo en este caso Venta de Electronico');
 INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ('Compra','Cada vez que un empleado realiza una compra en el sistema queda como comprobacion el tipo de accion que hizo en este caso Compra de electronico');
 INSERt INTO tbl_tipo_bitacora (BITACORA,DESCRIPCION) VALUES ('Creacion Cuenta','Cuando el Administrador inserta un nuevo empleado queda guardado en la tabla la accion que realizo');
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) values ("Cambio Clave","El Empleado realizo un cambio de clave, dicho cambio queda registrado en la base de datos");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) values ("Cambio Correo","El Empleado realizo un cambio de correo, dicho cambio queda registrado en la base de datos");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Cambio Estatus","Se cambio el estatus de un actual empleado, sea para moverlo a otra sucursal o bien para ausentarlo, despedirlo o volverlo a poner en funcion de sus labores");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Cambio Privilegios","Se le asigno un nuevo cargo a un empleado como gerente, administrador etc");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Insercion Sucursal","Se agrego y almaceno una nueva sucursal a la base de datos donde puede trabajar nuevos empleados");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Insercion Proveedor","Se agrego y almaceno un nuevo proveedor a la base de datos");
