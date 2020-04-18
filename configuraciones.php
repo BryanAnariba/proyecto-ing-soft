@@ -35,6 +35,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <style>
+        .bg-dark {
+            background: #212121 !important;
+        }
+
+        h1 , h2 , h3 , h4 , h5 , h6 {
+            color: #fff !important;
+        }
+    </style>
 </head>
 
 <body style="font-family: 'Roboto', ;">
@@ -46,8 +55,8 @@
         <div class="row mt-5">
             <div class="col-lg-12 col-sm-12">
                 <div class="card">
-                    <div class="card-header bg-dark">
-                        <h3 class="text-center" style="color:#FFC312;">
+                    <div class="card-header" style="background: #212121;">
+                        <h3 class="text-center" style="color:#212121;">
                             Menu De Opciones
                         </h3>
                     </div>
@@ -55,8 +64,8 @@
                         <div class="container">
                             <div class="row mt-5 mb-5">
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/contrasena.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -65,8 +74,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/estado.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -75,8 +84,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/gmail.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -89,8 +98,8 @@
                         <div class="container">
                             <div class="row mt-5 mb-5">
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/empleado.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -99,8 +108,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/seminario.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -109,12 +118,12 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/proveedor.png" width="128">
                                         </div>
                                         <div class="card-body">
-                                            <input type="button" class="btn btn-info btn-block" value="Agregar Nuevo Proveedor">
+                                            <a href="./proveedores.php" class="btn btn-info btn-block">Agregar nuevo proveedor</a>
                                         </div>
                                     </div>
                                 </div>
@@ -123,8 +132,8 @@
                         <div class="container">
                             <div class="row mt-5 mb-5">
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/inventario.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -133,8 +142,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/alarma.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -143,8 +152,8 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-sm-12">
-                                    <div class="card bg-dark configuraciones-empleado">
-                                        <div class="card-header bg-dark mx-auto">
+                                    <div class="card configuraciones-empleado" style="background: #212121;">
+                                        <div class="card-header mx-auto" style="background: #212121;">
                                             <img src="assets/img/urbano.png" width="128">
                                         </div>
                                         <div class="card-body">
@@ -155,7 +164,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-footer bg-dark">
+                    <div class="card-footer" style="background: #212121;">
                     </div>
                 </div>
             </div>
@@ -169,9 +178,9 @@
             <div class="col-lg-12 col-sm-12 mx-auto">
                 <img src="assets/img/product-input-fields.png" id="avatar4">
                 <div class="card">
-                    <div class="card-header bg-dark">
+                    <div class="card-header" style="background: #212121;">
                         <br><br>
-                        <h4 class="text-white text-center">Rellene Los Siguientes Campos</h4>
+                        <h2 class="text-center">Rellene Los Siguientes Campos</h2>
                     </div>
                     <div class="card-body" style="background:#FAFAFA;">
                         <form>
@@ -188,7 +197,7 @@
                                     <input type="text" id="txt-apellido" class="form-control" placeholder="Digite su Apellido Completo">
                                 </div>
                                 <div class="col form-group">
-                                    <label for="txt-fecha-nac" class="form-control bg-dark text-white">Seleccione La Fecha de Nacimiento</label>
+                                    <label for="txt-fecha-nac" class="form-control bg-dark text-white" >Seleccione La Fecha de Nacimiento</label>
                                     <input type="date" id="txt-fecha-nac" class="form-control">
                                 </div>
                             </div>
@@ -276,7 +285,7 @@
             <div class="col-lg-12 col-sm-12">
                 <div class="card">
                     <div class="card-header bg-dark">
-                        <h2 class="text-warning text-center">
+                        <h2 class="text-warning text-center text-white">
                             Formulario de cambio de clave
                         </h2>
                     </div>
@@ -577,6 +586,7 @@
             </div>
         </div>
     </div>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a8b47806ff.js" crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

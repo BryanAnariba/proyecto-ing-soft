@@ -45,3 +45,7 @@ INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Cambio Estatus","S
 INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Cambio Privilegios","Se le asigno un nuevo cargo a un empleado como gerente, administrador etc");
 INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Insercion Sucursal","Se agrego y almaceno una nueva sucursal a la base de datos donde puede trabajar nuevos empleados");
 INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Insercion Proveedor","Se agrego y almaceno un nuevo proveedor a la base de datos");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Inactivacion Proveedor","Se desabilita el proveedor");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Activacion Proveedor","Se habilita el proveedor");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Inactivacion Sucursal","Se desabilita la sucursal");
+INSERT INTO TBL_TIPO_BITACORA (BITACORA,DESCRIPCION) VALUES ("Activacion Sucursal","Se habilita la sucursal");

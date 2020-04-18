@@ -21,20 +21,10 @@
     // hash: $2y$10$wyWmJ5.H.Oeacixp45vbJeguQv3Zk4qaYhlSDahm2Z.pgaZGnCWGS
 
 
-    // gmail -> mariafernanda@gmail.com
-    // pass -> ASD456
+    // gmail -> estarossa@gmail.com
+    // pass ->  JKIDaxWDwh
 
-    // test6@gmail.com 
-    //C1aquQBQd5
 
-    // test12@gmail.com
-    // ToyTaBVB9h
-
-    // anael@gmail.com 
-    // fm$FMPYhAi
-
-    // morningstar@gmail.com 
-    // NSdCM53Y2D
 
 
 ?>
