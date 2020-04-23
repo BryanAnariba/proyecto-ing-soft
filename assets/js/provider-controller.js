@@ -3,6 +3,7 @@ var tipoProveedor = '';
 var direccionProveedor = '';
 var correo = '';
 var telefono = '';
+var identified ='';
 function limpiaCasillas () {
     document.getElementById('txt-nombre-proveedor').value = '';
     document.getElementById('tipo-proveedor').value = '';
@@ -192,6 +193,7 @@ function cambiaEstatus(identificador) {
     });
 }
 function muestraProveedores () {
+    let img = 'assets/img/contenido.png';
     document.getElementById('muestra-proveedores').innerHTML = ``;
     let val = '';
     $.ajax({
@@ -216,6 +218,11 @@ function muestraProveedores () {
                         <td>${ res[i].correo }</td>
                         <td>${ res[i].telefono }</td>
                         <td><input type="button" class="${val}" value="${ res[i].status }" onclick="cambiaEstatus(${res[i].id})"></td>
+                        <td>
+                            <a onclick="buscarProveedor(${res[i].id})" style="cursor: pointer">
+                                <img src="${img}" alt="editar" style="width:25px">
+                            </a>
+                        </td>
                     </tr>
                 `;
             }
@@ -229,6 +236,42 @@ function muestraProveedores () {
     });
 }
 
-function buscarProveedor() {
-    alert('works');
+function buscarProveedor(identificador) {
+    data = `id=${identificador}`;
+    console.log(data);
+    $.ajax({
+        url: 'ajax/procesar-edicion-proveedor.php' ,
+        method: 'POST' ,
+        dataType: 'json' ,
+        data: data ,
+        success:function (res) {
+            if( res.tipoProv == 1) {
+                prov = 'Celulares';
+            }
+            if( res.tipoProv == 2) {
+                prov = 'Repuestos'
+            }
+            if ( res.tipoProv == 3) {
+                prov = 'Accesorios y Celulares'
+            }
+            getTipoProveedores ();
+            console.log(res);
+            identified = res.id;
+            document.getElementById('p1').value = res.nombreProv;
+            document.getElementById('tipo-proveedor2').innerHTML += `
+                <option value="${ res.tipoProv }">${ prov }</option>
+            `;
+            document.getElementById('p3').value = res.direccion;
+            document.getElementById('p4').value = res.correo;
+            document.getElementById('p5').value = res.telefono;
+            document.getElementById('insercion2').style.display = 'block';
+            document.getElementById('insercion').style.display = 'none';
+            document.getElementById('mostrar').style.display = 'none';
+            
+           
+        },
+        error:function (error) {
+            console.error(error);
+        }
+    });
 }

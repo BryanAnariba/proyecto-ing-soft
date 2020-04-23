@@ -76,7 +76,7 @@ if (isset($_SESSION['USER_ID'])) {
                                                 </div>
                                             </div>
                                             <br>
-                                            <div class="row">
+                                            <div class="row" style="display: none">
                                                 <div class="col">
                                                     <input type="button" onclick="editar()" id="btn-edicion" class="btn btn-danger btn-block" value="Editar Proveedor">
                                                 </div>
@@ -93,6 +93,7 @@ if (isset($_SESSION['USER_ID'])) {
                                             <h2 class="text-center " style="color:#ffbb33;">
                                                 Datos del proveedor
                                             </h2>
+                                            
                                         </div>
                                     </div>
                                     <div class="card-body" style="background: #FAFAFA;">
@@ -148,7 +149,7 @@ if (isset($_SESSION['USER_ID'])) {
                                             <div class="row mt-5">
                                                 <div class="col-6">
                                                     <div class="form-group">
-                                                        <input type="button" class="btn btn-info btn-block" onclick="GuardarInformacion ()" id="btn-insercion-suc" value="Guardar Sucursal">
+                                                        <input type="button" class="btn btn-info btn-block" onclick="GuardarInformacion ()" id="btn-insercion-suc" value="Guardar Proveedor">
                                                     </div>
                                                 </div>
                                                 <div class="col-6">
@@ -174,9 +175,10 @@ if (isset($_SESSION['USER_ID'])) {
                                                 <th>Correo</th>
                                                 <th>Telefono</th>
                                                 <th>Estatus</th>
+                                                <th>Editar</th>
                                             </tr>
                                         </thead>
-                                        <tbody id="muestra-proveedores">
+                                        <tbody id="muestra-proveedores" class="text-center">
 
                                         </tbody>
                                     </table>
@@ -207,6 +209,83 @@ if (isset($_SESSION['USER_ID'])) {
                                                     onclick="buscarProveedor()">
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-sm-12" style="display:none" id="insercion2">
+                                    <div class="card">
+                                        <div class="card-header " style="background: #212121;">
+                                            <h2 class="text-center " style="color:#ffbb33;">
+                                                Informacion del proveedor
+                                            </h2>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card-body" style="background: #FAFAFA;">
+                                        <div class="container">
+                                            <div class="row mt-5">
+                                                <div class="col-12">
+                                                    <label for="txt-nom-suc" class="form-control  text-white" style="background: #212121;">
+                                                        Digite el nombre del proveedor:
+                                                    </label>
+                                                    <input type="text" id="p1" class="form-control" placeholder="Nombre del proveedor" autofocus>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-6">
+                                                    <label for="se" class="form-control  text-white" style="background: #212121;">
+                                                        Seleccione el tipo de proveedor:
+                                                    </label>
+                                                </div>
+                                                <div class="col-6">
+                                                    <select name="tipo-proveedor" id="tipo-proveedor2" class="form-control">
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <label for="direccion-proveedor" class="form-control  text-white" style="background: #212121;">
+                                                            Digite direccion del proveedor:
+                                                        </label>
+                                                        <input type="text" id="p3" class="form-control" placeholder="Direccion del proveedor">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="correo" class="form-control  text-white" style="background: #212121;">
+                                                            Digite correo del proveedor:
+                                                        </label>
+                                                        <input type="email" id="p4" class="form-control" placeholder="Correo del proveedor">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="telefono" class="form-control  text-white" style="background: #212121;">
+                                                            Digite telefono del proveedor:
+                                                        </label>
+                                                        <input type="text" id="p5" class="form-control" placeholder="Telefono del proveedor">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="button" class="btn btn-info btn-block" id="btn-insercion-suc" value="Actualizar Informcion">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <input type="button" id="btn-salir-sin-hacer-nada-suc" class="btn btn-danger btn-block" value="Salir sin hacer nada">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="respuesta-notificacion-proveedores" class="card-footer" style="background: #212121;">
+
                                     </div>
                                 </div>
                             </div>
