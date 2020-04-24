@@ -1,4 +1,4 @@
-<footer class="mt-5">
+<footer class="mt-5 ">
     <div class="partFooter">
         <img src="assets/img/is.png" alt="">
     </div>
